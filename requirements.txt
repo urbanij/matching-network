@@ -1,2 +1,2 @@
--i https://pypi.org/simple
-
+quantiphy==2.10.0
+six==1.14.0

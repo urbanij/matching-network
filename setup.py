@@ -25,7 +25,7 @@ def read(*names, **kwargs):
 
 setup(
     name='matching-network',
-    version='0.0.1',
+    version='0.0.0',
     description='Design matching network (L-sections)',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
