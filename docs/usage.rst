@@ -4,7 +4,7 @@ Usage
 
 To use Matching Network in a project::
 
-	>>> import matching_network.L_section as mn
+    >>> import matching_network.L_section as mn
 
     >>> mn.L_section_matching(123,231,54).match()
 
