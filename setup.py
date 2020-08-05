@@ -10,7 +10,7 @@ setup(
     url='http://pypi.python.org/pypi/matching_network/',
     license='LICENSE.txt',
     description='Design matching network (L-sections)',
-    long_description=open('README.rst').read(),
+    long_description=open('README.md').read(),
     install_requires=[
         "quantiphy==2.10.0",
         "six==1.14.0",
