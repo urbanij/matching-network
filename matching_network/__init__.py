@@ -11,7 +11,7 @@
 
 import quantiphy
 
-__version__ = '0.0.0'
+__version__ = '0.0.1'
 
 
 PI = 3.141592653589793

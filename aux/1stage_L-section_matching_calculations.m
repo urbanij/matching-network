@@ -67,7 +67,7 @@ pretty(real(Z2))
 
 
 
-pretty(imag(Z_2))
+pretty(imag(Z2))
 %                    1        X1
 %                  ---- + ---------
 %                  Xshu     2     2
