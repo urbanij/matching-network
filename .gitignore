@@ -71,3 +71,6 @@ docs/_build
 .mypy_cache/
 
 *ipynb_checkpoints*
+
+
+aux/*.html
