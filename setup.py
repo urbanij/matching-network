@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='matching_network',
-    version='0.0.3',
+    version='0.0.4',
     author='Francesco Urbani',
     author_email='francescourbanidue@gmail.com',
     packages=['matching_network'],

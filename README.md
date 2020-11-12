@@ -21,7 +21,7 @@ Installation
 
 
 
-    pip install matching-network
+    pip install matching-network==0.0.0
 
 
 

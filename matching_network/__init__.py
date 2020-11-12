@@ -1,17 +1,14 @@
 # @date        : Fri Mar 27 10:11:01 CET 2020
-# @author(s)   : Francesco Urbani
+# @author(s)   : Francesco Urbani <https://urbanij.github.io>
 # @file        : 
 # @descritpion : 
 #                
 # 
 
-
 """Matching network module"""
 
 
 import quantiphy
-
-#__version__ = '0.0.2'
 
 
 PI = 3.141592653589793
@@ -36,8 +33,8 @@ class ReactiveComponent:
         wire:
             X = 0 Ω ⇔ B = -inf
 
-    --------------------------------
-    Z = jX [Ω]
+        --------------------------------
+        Z = jX [Ω]
     """
     def __init__(self, reactance, f=None):
         self._frequency = f

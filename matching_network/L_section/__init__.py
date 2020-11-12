@@ -1,3 +1,9 @@
+# @date        : Fri Mar 27 10:11:01 CET 2020
+# @author(s)   : Francesco Urbani <https://urbanij.github.io>
+# @file        : 
+# @descritpion : 
+#                
+# 
 
 from .. import ReactiveComponent
 from .. import Solution
@@ -41,7 +47,8 @@ class L_section_matching:
                 C = 48.415 pF  (@ 100 MHz)
                 Series Inductor:
                 X = 30.435 Ω ⇔ B = -32.857 mS
-                L = 48.438 nH  (@ 100 MHz
+                L = 48.438 nH  (@ 100 MHz)
+
     """
     def __init__(self, input_impedance, output_impedance, frequency=None):
         
@@ -160,7 +167,8 @@ class L_section_matching:
         return self._input_reactance
     
     def plot(self):
-        pass
+        print("Unimplemented...")
+        return
         delta_f = 2000
         freq = np.linspace(self._frequency-delta_f/2, self._frequency+delta_f/2, 2000)
         for solution in self._solutions:
