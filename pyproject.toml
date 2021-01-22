@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "matching_network"
+version = "0.0.5"
+description = 'Design lumped-parameters matching networks (L-sections)'
+license = "LICENSE.md"
+readme = "README.md"
+homepage = "https://pypi.org/project/matching-network/"
+repository = "https://github.com/urbanij/matching-network"
+documentation = "https://github.com/urbanij/matching-network"
+keywords = ["matching networks", "l-section-matching", "lumped-parameters-matching"]
+authors = ["Francesco Urbani <francescourbanidue@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+quantiphy = "^2.13.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

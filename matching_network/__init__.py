@@ -7,6 +7,8 @@
 
 """Matching network module"""
 
+__version__ = '0.0.5'
+
 
 import quantiphy
 
@@ -101,7 +103,4 @@ class Solution:
             return f"{self._config_type}\n\tShunt {self._shunt_elem}\n\tSeries {self._series_elem}\n"
         else:
             return f"{self._config_type}\n\tSeries {self._series_elem}\n\tShunt {self._shunt_elem}\n"
-
-
-
 
