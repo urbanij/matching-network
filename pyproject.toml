@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "matching_network"
-version = "0.0.5"
+version = "0.0.6"
 description = 'Design lumped-parameters matching networks (L-sections)'
 license = "MIT"
 readme = "README.md"
@@ -11,7 +11,7 @@ keywords = ["matching networks", "l-section-matching", "lumped-parameters-matchi
 authors = ["Francesco Urbani <francescourbanidue@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.6"
 quantiphy = "^2.13.0"
 
 [tool.poetry.dev-dependencies]
