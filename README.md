@@ -2,8 +2,8 @@
 
 <!-- Index of Jupyter (IPython) Notebooks -->
 
-|
-|-----------------------------------------------------------------------------------------------------------------------------------------------|
+|Title                                                                                                           |
+|----------------------------------------------------------------------------------------------------------------|
 |<a href="https://github.com/urbanij/matching-network/blob/master/aux/L-section_matching_calculations.ipynb">L-section_matching_calculations</a>|
 |<a href="https://github.com/urbanij/matching-network/blob/master/aux/calculations.ipynb">Calculations</a>                                      |
 |<a href="https://github.com/urbanij/matching-network/blob/master/aux/demo_matching_network.ipynb">Demo</a>                                     |
