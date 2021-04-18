@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "matching_network"
-version = "0.0.6"
+version = "0.1.0"
 description = 'Design lumped-parameters matching networks (L-sections)'
 license = "MIT"
 readme = "README.md"
 homepage = "https://pypi.org/project/matching-network/"
 repository = "https://github.com/urbanij/matching-network"
-documentation = "https://github.com/urbanij/matching-network"
+# documentation = "https://github.com/urbanij/matching-network"
 keywords = ["matching networks", "l-section-matching", "lumped-parameters-matching"]
 authors = ["Francesco Urbani <francescourbanidue@gmail.com>"]
 

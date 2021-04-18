@@ -20,7 +20,7 @@ class ReactiveComponent:
 
         >>> ReactiveComponent(0, f=12e6)
         wire:
-            X = 0 Ω ⇔ B = -inf
+            X = 0 Ω ⇔ B = inf
 
         --------------------------------
         Z = jX [Ω]
@@ -268,7 +268,7 @@ class L_section_matching:
         
     def __repr__(self):
         rv  = f"From {self._Z1} Ω to {self._Z2} Ω\n\n"
-        rv += f"normalized starting impedance = {self._Z1}Ω/{self._Z2}Ω = {self._normalized_impedance:.5g}\n\n"
+        rv += f"normalized starting impedance = {self._Z1}Ω / {self._Z2}Ω = {self._normalized_impedance:.5g}\n\n"
         if len(self._solutions) > 0:
             rv += f"#solutions: {len(self._solutions)}\n\n"
             for solution in self._solutions:
