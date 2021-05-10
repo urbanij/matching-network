@@ -2,12 +2,10 @@
 
 <!-- Index of Jupyter (IPython) Notebooks -->
 
-|Title                                                                                                           |
-|----------------------------------------------------------------------------------------------------------------|
+|Jupyter Notebooks                                                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|
 |<a href="https://github.com/urbanij/matching-network/blob/master/aux/L-section_matching_calculations.ipynb">L-section_matching_calculations</a>|
 |<a href="https://github.com/urbanij/matching-network/blob/master/aux/calculations.ipynb">Calculations</a>                                      |
-|<a href="https://github.com/urbanij/matching-network/blob/master/aux/demo_matching_network.ipynb">Demo</a>                                     |
-
 
 
 ---
@@ -24,48 +22,12 @@ pip install matching_network
 ```
 
 
-Documentation
+Usage
 =============
 
-
-```python
->>> import matching_network as mn
->>>
->>> impedance_you_have         = 90 + 32j # Ω
->>> impedance_you_want_to_have = 175      # Ω
->>>
->>> frequency                  = 900e6    # Hz
->>>
->>> mn.L_section_matching(impedance_you_have, impedance_you_want_to_have, frequency).match()
-From (90+32j) Ω to 175 Ω
-
-normalized starting impedance = (90+32j)Ω/175Ω = 0.51429+0.18286j
-
-#solutions: 2
-
-series-shunt
-    Series Inductor:
-    X = 55.464 Ω ⇔ B = -18.03 mS
-    L = 9.8082 nH  (@ 900 MHz)
-    Shunt Capacitor:
-    X = -180.07 Ω ⇔ B = 5.5533 mS
-    C = 982.04 fF  (@ 900 MHz)
-
-series-shunt
-    Series Capacitor:
-    X = -119.46 Ω ⇔ B = 8.3707 mS
-    C = 1.4803 pF  (@ 900 MHz)
-    Shunt Inductor:
-    X = 180.07 Ω ⇔ B = -5.5533 mS
-    L = 31.844 nH  (@ 900 MHz)
-
->>>
-```
-
-
-Or, straight from the CLI:
+#### From the CLI
 ```bash
-$ python -c "import matching_network as mn; print(mn.L_section_matching(100, 20+43j, 1e9).match());"
+$ matching_network --from 100 --to 20+43j --freq 1e9
 ```
 ```
 From 100 Ω to (20+43j) Ω
@@ -103,3 +65,40 @@ series-shunt
 	X = 44.929 Ω ⇔ B = -22.257 mS
 	L = 7.1507 nH  (@ 1 GHz)
 ```
+
+#### Inside Python
+
+```python
+>>> import matching_network as mn
+>>>
+>>> impedance_you_have         = 90 + 32j # Ω
+>>> impedance_you_want_to_have = 175      # Ω
+>>>
+>>> frequency                  = 900e6    # Hz
+>>>
+>>> mn.L_section_matching(impedance_you_have, impedance_you_want_to_have, frequency).match()
+From (90+32j) Ω to 175 Ω
+
+normalized starting impedance = (90+32j)Ω/175Ω = 0.51429+0.18286j
+
+#solutions: 2
+
+series-shunt
+    Series Inductor:
+    X = 55.464 Ω ⇔ B = -18.03 mS
+    L = 9.8082 nH  (@ 900 MHz)
+    Shunt Capacitor:
+    X = -180.07 Ω ⇔ B = 5.5533 mS
+    C = 982.04 fF  (@ 900 MHz)
+
+series-shunt
+    Series Capacitor:
+    X = -119.46 Ω ⇔ B = 8.3707 mS
+    C = 1.4803 pF  (@ 900 MHz)
+    Shunt Inductor:
+    X = 180.07 Ω ⇔ B = -5.5533 mS
+    L = 31.844 nH  (@ 900 MHz)
+
+>>>
+```
+
