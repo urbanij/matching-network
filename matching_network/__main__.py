@@ -15,7 +15,7 @@
 
 
 import click
-from notmain import L_section_matching
+from matching_networks.notmain import L_section_matching
 
 
 
