@@ -15,12 +15,22 @@
 
 
 import click
+from notmain import L_section_matching
+
+
 
 @click.command()
 # @click.argument('keyword', required=False)
 @click.option('--from', '-f', 'from_', required=True, type=complex)
-@click.option('--to', '-t', 'to_', required=True, type=complex)
-def match_(from_, to_):
-    click.echo('from %s to %s' % (from_, to_))
+@click.option('--to', '-t', 'to', required=True, type=complex)
+@click.option('--frequency', '--freq', 'frequency', required=False, type=float)
+def match_(from_, to, frequency):
+    print(
+        L_section_matching(
+            input_impedance=from_, 
+            output_impedance=to, 
+            frequency=frequency
+        ).match()
+    )
 
 match_()
