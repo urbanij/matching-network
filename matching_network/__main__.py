@@ -24,7 +24,7 @@ from notmain import L_section_matching
 @click.option('--from', '-f', 'from_', required=True, type=complex)
 @click.option('--to', '-t', 'to', required=True, type=complex)
 @click.option('--frequency', '--freq', 'frequency', required=False, type=float)
-def match_(from_, to, frequency):
+def cli(from_, to, frequency):
     print(
         L_section_matching(
             input_impedance=from_, 
@@ -33,4 +33,4 @@ def match_(from_, to, frequency):
         ).match()
     )
 
-match_()
+cli()

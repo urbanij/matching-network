@@ -65,7 +65,7 @@ series-shunt
 
 Or, straight from the CLI:
 ```bash
-$ python -c "import matching_network as mn; print(mn.L_section_matching(100, 20+43j, 1e9).match());"
+$ python -c "import matching_network as mn; print(mn.L_section_matching(100, 20+43j, 1e9).match())"
 ```
 ```
 From 100 Ω to (20+43j) Ω
