@@ -15,8 +15,7 @@
 
 
 import click
-from matching_networks.notmain import L_section_matching
-
+import matching_network as mn
 
 
 @click.command()
@@ -26,7 +25,7 @@ from matching_networks.notmain import L_section_matching
 @click.option('--frequency', '--freq', 'frequency', required=False, type=float)
 def cli(from_, to, frequency):
     print(
-        L_section_matching(
+        mn.L_section_matching(
             input_impedance=from_, 
             output_impedance=to, 
             frequency=frequency
