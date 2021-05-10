@@ -8,7 +8,7 @@
 """Matching network module"""
 
 __title__ = 'matching_network'
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 __author__ = u"Francesco Urbani"
 
 from .notmain import L_section_matching
