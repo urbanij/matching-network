@@ -27,43 +27,43 @@ Usage
 
 #### From the CLI
 ```bash
-$ matching_network --from 100 --to 20+43j --freq 1e9
+matching_network --from 100 --to 20+43j --freq 13.56
 ```
 ```
-From 100 Ω to (20+43j) Ω
+From (100+0j) Ω to (20+43j) Ω
 
-normalized starting impedance = 100Ω / (20+43j)Ω = 0.88928-1.912j
+normalized starting impedance = (100+0j)Ω / (20+43j)Ω = 0.88928-1.912j
 
 #solutions: 4
 
 shunt-series
-	Shunt Inductor:
-	X = 50 Ω ⇔ B = -20 mS
-	L = 7.9577 nH  (@ 1 GHz)
-	Series Inductor:
-	X = 3 Ω ⇔ B = -333.33 mS
-	L = 477.46 pH  (@ 1 GHz)
+  Shunt Inductor:
+  X = 50 Ω ⇔ B = -20 mS
+  L = 586.85 mH  (@ 13.56 Hz)
+  Series Inductor:
+  X = 3 Ω ⇔ B = -333.33 mS
+  L = 35.211 mH  (@ 13.56 Hz)
 shunt-series
-	Shunt Capacitor:
-	X = -50 Ω ⇔ B = 20 mS
-	C = 3.1831 pF  (@ 1 GHz)
-	Series Inductor:
-	X = 83 Ω ⇔ B = -12.048 mS
-	L = 13.21 nH  (@ 1 GHz)
+  Shunt Capacitor:
+  X = -50 Ω ⇔ B = 20 mS
+  C = 234.74 uF  (@ 13.56 Hz)
+  Series Inductor:
+  X = 83 Ω ⇔ B = -12.048 mS
+  L = 974.18 mH  (@ 13.56 Hz)
 series-shunt
-	Series Inductor:
-	X = 35.285 Ω ⇔ B = -28.341 mS
-	L = 5.6157 nH  (@ 1 GHz)
-	Shunt Inductor:
-	X = 62.571 Ω ⇔ B = -15.982 mS
-	L = 9.9585 nH  (@ 1 GHz)
+  Series Inductor:
+  X = 35.285 Ω ⇔ B = -28.341 mS
+  L = 414.14 mH  (@ 13.56 Hz)
+  Shunt Inductor:
+  X = 62.571 Ω ⇔ B = -15.982 mS
+  L = 734.4 mH  (@ 13.56 Hz)
 series-shunt
-	Series Capacitor:
-	X = -35.285 Ω ⇔ B = 28.341 mS
-	C = 4.5106 pF  (@ 1 GHz)
-	Shunt Inductor:
-	X = 44.929 Ω ⇔ B = -22.257 mS
-	L = 7.1507 nH  (@ 1 GHz)
+  Series Capacitor:
+  X = -35.285 Ω ⇔ B = 28.341 mS
+  C = 332.64 uF  (@ 13.56 Hz)
+  Shunt Inductor:
+  X = 44.929 Ω ⇔ B = -22.257 mS
+  L = 527.33 mH  (@ 13.56 Hz)
 ```
 
 #### Inside Python
