@@ -2,12 +2,11 @@
 Solve L-section lumped parameters matching networks in a wink. (See [How to use](#how-to-use) section)<br><br>
 
 ### Shunt-series config.
-![](../matching_network/aux/figures/shunt_series_configuration.png)
+![](https://raw.githubusercontent.com/urbanij/matching-network/master/aux/figures/shunt_series_configuration.png)
 
 
 ### Series-shunt config.
-![](../matching_network/aux/figures/series_shunt_configuration.png)
-
+![](https://raw.githubusercontent.com/urbanij/matching-network/master/aux/figures/series_shunt_configuration.png)
 
 
 <!-- Index of Jupyter (IPython) Notebooks -->
