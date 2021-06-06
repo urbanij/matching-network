@@ -36,7 +36,7 @@ How to use
 
 ### From the CLI
 ```bash
-matching_network --from 100 --to 20+43j --freq 13.56
+matching_network --from 100 --to 20+43j --freq 13.56e6
 ```
 ```
 From (100+0j) Ω to (20+43j) Ω
@@ -48,31 +48,31 @@ normalized starting impedance = (100+0j)Ω / (20+43j)Ω = 0.88928-1.912j
 shunt-series
     Shunt Inductor:
     X = 50 Ω ⇔ B = -20 mS
-    L = 586.85 mH  (@ 13.56 Hz)
+    L = 586.85 nH  (@ 13.56 MHz)
     Series Inductor:
     X = 3 Ω ⇔ B = -333.33 mS
-    L = 35.211 mH  (@ 13.56 Hz)
+    L = 35.211 nH  (@ 13.56 MHz)
 shunt-series
     Shunt Capacitor:
     X = -50 Ω ⇔ B = 20 mS
-    C = 234.74 uF  (@ 13.56 Hz)
+    C = 234.74 pF  (@ 13.56 MHz)
     Series Inductor:
     X = 83 Ω ⇔ B = -12.048 mS
-    L = 974.18 mH  (@ 13.56 Hz)
+    L = 974.18 nH  (@ 13.56 MHz)
 series-shunt
     Series Inductor:
     X = 35.285 Ω ⇔ B = -28.341 mS
-    L = 414.14 mH  (@ 13.56 Hz)
+    L = 414.14 nH  (@ 13.56 MHz)
     Shunt Inductor:
     X = 62.571 Ω ⇔ B = -15.982 mS
-    L = 734.4 mH  (@ 13.56 Hz)
+    L = 734.4 nH  (@ 13.56 MHz)
 series-shunt
     Series Capacitor:
     X = -35.285 Ω ⇔ B = 28.341 mS
-    C = 332.64 uF  (@ 13.56 Hz)
+    C = 332.64 pF  (@ 13.56 MHz)
     Shunt Inductor:
     X = 44.929 Ω ⇔ B = -22.257 mS
-    L = 527.33 mH  (@ 13.56 Hz)
+    L = 527.33 nH  (@ 13.56 MHz)
 ```
 
 ### Inside Python
