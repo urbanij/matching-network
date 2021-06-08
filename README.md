@@ -36,7 +36,7 @@ How to use
 
 ### From the CLI
 ```bash
-matching_network --from 100 --to 20+43j --freq 13.56e6
+matching_network --from 100 --to 20+43j --freq 13.56e6 # both impedances in Ω. 
 ```
 ```
 From (100+0j) Ω to (20+43j) Ω
@@ -74,6 +74,11 @@ series-shunt
     X = 44.929 Ω ⇔ B = -22.257 mS
     L = 527.33 nH  (@ 13.56 MHz)
 ```
+
+```bash
+matching_network --from "24.3+8.3j mS"  --to 1.1+9.3j # default in Ω unless specified, using `mS`.
+```
+
 
 ### Inside Python
 
