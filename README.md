@@ -1,6 +1,13 @@
 # matching_network
 Solve L-section lumped parameters matching networks in a wink. (See [How to use](#how-to-use) section)<br><br>
 
+
+## Badges
+
+<a href="https://github.com/urbanij/matching-network/actions"><img src="https://github.com/urbanij/matching-network/actions/workflows/main.yml/badge.svg"></a>
+[![Downloads](https://pepy.tech/badge/matching-network)](https://pepy.tech/project/matching-network)
+
+
 ### Shunt-series config.
 ![](https://raw.githubusercontent.com/urbanij/matching-network/master/aux/figures/shunt_series_configuration.png)
 
@@ -17,10 +24,7 @@ Solve L-section lumped parameters matching networks in a wink. (See [How to use]
 |<a href="https://urbanij.github.io/projects/matching_networks/calc.html">Calculations</a> (Matlab pre-calculations)                                     |
 
 
----
 
-
-[![Downloads](https://pepy.tech/badge/matching-network)](https://pepy.tech/project/matching-network)
 
 
 Installation
