@@ -13,10 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
-
     - name: Install dependencies
         run: pip install pytest
-
     - name: Test with pytest
         run: pytest
